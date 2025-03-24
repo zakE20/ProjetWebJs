@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins' , sans-serif;
+}
+body{
+    height:100vh;
+    background-image: url(../assets/background-ph.jpg);
+    background-size: cover;
+    background-position: center;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2rem;
+}   
+a:hover{
+    color: rgb(0, 255, 136);
+}
+header{position: relative;
+        padding:0 2rem;
+        background-color: rgba(0,0,0,0.35);
+    }
+.navbar{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    height:60px;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+.navbar .logo{
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+.navbar .right .nav-links{
+    display: flex;
+    flex-direction: row;
+    gap:2rem;
+}
+.navbar .burger-menu-button{
+    cursor: pointer;
+    color: #fff;
+    font-size: 2.5rem;
+}
+h1{
+    color: #fff;
+    text-align: center;
+}
+.button1, .button2{
+    background-color: #f00;
+    color: #fff;
+    border: 1px solid #f00;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    outline: none;
+    font-size: 0.9rem;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: transparent;
+
+}
+.button1:hover, .button2:hover{
+    background-color: #f00;
+    color: rgb(20, 19, 19);
+}
+/*responsive*/
+@media (max-width:990px){
+  header{
+    background:none;
+  }  
+  .navbar .right .nav-links, .navbar .buttons .button1, .navbar .buttons .button2 {
+    display: none;
+}
+.navbar .burger-menu-button{
+        display:block;
+    }
+}
